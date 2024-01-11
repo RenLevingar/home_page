@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Backgroun */
+.mainSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../public/images/background.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    z-index: -100;
+    position: absolute;
+}
+
+
+/* Search */
+.searchSection {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+}
+.searchForm {
+    background-color: #6B8966;
+}
