@@ -3,7 +3,9 @@ Home page for new google tabs.
 
 
 ## image credits
-Background - Pexels: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fforest%2520background%2F&psig=AOvVaw3v4HHdlyidiKXPECyTPP0l&ust=1705096917229000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCOD82JKr1oMDFQAAAAAdAAAAABAE
+background - Pexels: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fforest%2520background%2F&psig=AOvVaw3v4HHdlyidiKXPECyTPP0l&ust=1705096917229000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCOD82JKr1oMDFQAAAAAdAAAAABAE
+musicBG - AI generated
+wireframe.png - made on Figma
 
 # Getting Started with Create React App
 

@@ -9,9 +9,9 @@ const Nav = () => {
             <Acc/>
         </div>
         <div className='navButtons'>
-            <button className='navButton'><strong>Music<GoTriangleDown /></strong></button>
-            <button className='navButton'><strong>Notepad<GoTriangleDown /></strong></button>
-            <button className='navButton'><strong>Quote<GoTriangleDown /></strong></button>
+            <button className='navButton'><strong><a href="#music" className='links'>Music<GoTriangleDown /></a></strong></button>
+            <button className='navButton'><strong><a href="#quotes" className='links'>Quote<GoTriangleDown /></a></strong></button>
+            <button className='navButton'><strong><a href="#notes" className='links'>Notepad<GoTriangleDown /></a></strong></button>
         </div>
     </section>
   )

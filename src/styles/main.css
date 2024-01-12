@@ -5,6 +5,9 @@
 *:focus{
     outline:none
 }
+body{
+    overflow-x: hidden;
+}
 
 /* Webkits */
 ::-webkit-scrollbar {
@@ -23,7 +26,7 @@
     background-position: center;
     z-index: -100;
     position: absolute;
-    min-height: 100vh;
+    min-height: 1000px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,6 +48,26 @@
     margin-left: 2rem;
     margin-top: 2rem;
     color: white;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-color: transparent;
+    background: #c0cfdd;
+    border-radius: 50%;
+    color: #000000;
+    margin-left: 1rem;
+    align-self: center;
+    min-width: 2rem;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.questionTitle{
+    display: flex;
 }
 .accTitle{
     font-size: clamp(1rem, 0.474rem + 2.807vw, 3rem);
@@ -75,6 +98,10 @@
     background: none;
     border: none;
 }
+.links{
+    text-decoration: none;
+    color: black;
+}
 .navButton:hover{
     cursor: pointer;
 }
@@ -101,11 +128,11 @@
     margin-top: 20vh;
 }
 .searchBarInput {
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
     background-color: #6B8966;
     color: white;
     border: none;
-    font-size: clamp(1rem, 0.474rem + 2.807vw, 3rem);
+    font-size: clamp(0.7rem, 0.161rem + 2.877vw, 2.75rem);;
     width: 75%;
 }
 .searchBarInput::placeholder{
@@ -124,4 +151,26 @@
 }
 .searchButton:hover{
     cursor: pointer;
+}
+
+/* Music */
+.musicSection {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem;
+    background-image: url('../../public/images/musicBG.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 50vh;
+}
+
+/* Notes Section */
+.notesSection{
+    width: 100vw;
+    height: 50vh;
+    background-image: url('../../public/images/notes.png');
+    background-size: cover;
+    background-position: center;
 }
