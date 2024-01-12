@@ -11,7 +11,7 @@ const Nav = () => {
         <div className='navButtons'>
             <button className='navButton'><strong><a href="#music" className='links'>Music<GoTriangleDown /></a></strong></button>
             <button className='navButton'><strong><a href="#quotes" className='links'>Quote<GoTriangleDown /></a></strong></button>
-            <button className='navButton'><strong><a href="#notes" className='links'>Notepad<GoTriangleDown /></a></strong></button>
+            <button className='navButton'><strong><a href="#notepad" className='links'>Notepad<GoTriangleDown /></a></strong></button>
         </div>
     </section>
   )
