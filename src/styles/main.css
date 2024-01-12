@@ -2,9 +2,19 @@
     margin: 0;
     padding: 0;
 }
+*:focus{
+    outline:none
+}
 
-/* Backgroun */
+/* Webkits */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Background */
 .mainSection {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-image: url('../../public/images/background.jpg');
@@ -13,8 +23,45 @@
     background-position: center;
     z-index: -100;
     position: absolute;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+/* Nav */
+.navSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.navButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.navButton{
+    width: auto;
+    font-size: 30px;
+    margin: 10px;
+    margin-right: 3vw;
+    background: none;
+    border: none;
+}
+.navButton:hover{
+    cursor: pointer;
+}
 
 /* Search */
 .searchSection {
@@ -22,7 +69,43 @@
     width: 100vw;
     height: auto;
     justify-content: center;
+    align-items: center;
 }
-.searchForm {
+.searchBar {
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+    height: 6vh;
+    border-radius: 2.5vw;
+    padding: 0.5rem;
     background-color: #6B8966;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    margin-top: 20vh;
+}
+.searchBarInput {
+    margin-left: 0.5rem;
+    background-color: #6B8966;
+    color: white;
+    border: none;
+    font-size: clamp(1rem, 0.474rem + 2.807vw, 3rem);
+    width: 75%;
+}
+.searchBarInput::placeholder{
+    color: white;
+}
+.searchButton {
+    background-color: none;
+    margin-right: 0;
+    height: auto;
+    background: none;
+    border: none;
+    padding: none;
+    font-size: 2.5rem;
+    color: white;
+    margin-right: 0.75rem;
+}
+.searchButton:hover{
+    cursor: pointer;
 }

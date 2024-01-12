@@ -2,9 +2,7 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <section className='mainSection'>
-
-    </section>
+    <section className='mainSection'></section>
   )
 }
 
