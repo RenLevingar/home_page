@@ -6,12 +6,13 @@ const Question = ({title, info}) => {
     return (
         <article className="question">
             <header>
-                <h4>{title}</h4>
+                <h4 className='questionTitle'>{title}
                 <button className='btn' onClick={()=>setShowInfo(!showInfo)}>
                     {showInfo ? <AiOutlineMinus/> : <AiOutlinePlus/>}
                 </button>
+                </h4>
             </header>
-            {showInfo && <p>{info}</p>}
+            {showInfo && <p className='accInfo'>{info}</p>}
         </article>
     )
 }

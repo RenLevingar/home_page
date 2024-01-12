@@ -1,33 +1,21 @@
 const questions = [
   {
     id: 1,
-    title: 'Do I have to allow the use of cookies?',
+    title: 'Music',
     info:
-      'Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.',
+      'This is the music page where can you swap between the top 5 songs. All of which were specifally chosen for this page!',
   },
   {
     id: 2,
-    title: 'How do I change my My Page password?',
+    title: 'Notepad',
     info:
-      'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
+      'The notepad allows you to write notes and keep them there for later use.',
   },
   {
     id: 3,
-    title: 'What is BankID?',
+    title: 'Quotes',
     info:
-      'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
-  },
-  {
-    id: 4,
-    title: 'Whose birth number can I use?',
-    info:
-      'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
-  },
-  {
-    id: 5,
-    title: 'When do I recieve a password ordered by letter?',
-    info:
-      'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
+      'This is a ranodmly selected quote that changes on every rerendering, or whenever you want a new quote.',
   },
 ]
 export default questions

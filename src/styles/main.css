@@ -33,19 +33,35 @@
 /* Nav */
 .navSection{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: auto;
     height: auto;
     margin: 0;
     padding: 0;
 }
+.navAccodian {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: white;
+}
+.accTitle{
+    font-size: clamp(1rem, 0.474rem + 2.807vw, 3rem);
+    color: black;
+}
+.accInfo{
+    color: black;
+    font-size: clamp(0.5rem, 0.336rem + 0.877vw, 1.125rem);
+}
+.questionTitle {
+    font-size: clamp(1rem, 0.671rem + 1.754vw, 2.25rem);
+    color: black;
+}
 .navButtons{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    position: absolute;
     width: auto;
     height: auto;
     margin: 0;
@@ -53,7 +69,7 @@
 }
 .navButton{
     width: auto;
-    font-size: 30px;
+    font-size: clamp(1rem, 0.671rem + 1.754vw, 2.25rem);
     margin: 10px;
     margin-right: 3vw;
     background: none;
