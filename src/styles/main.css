@@ -105,6 +105,9 @@ body{
 .navButton:hover{
     cursor: pointer;
 }
+.hidden{
+    opacity: 0;
+}
 
 /* Search */
 .searchSection {
@@ -164,6 +167,59 @@ body{
     background-size: cover;
     background-position: center;
     margin-top: 50vh;
+}
+
+/* Quote */
+.quoteSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(27, 27, 27);
+    background-image: url('../../public/images/tv.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.quoteButton{
+    position: relative;
+    background-color: rgb(231, 50, 255);
+    width: 12rem;
+    height: 5.5vh;
+    border-radius: 25px;
+    font-size: 25px;
+    margin-top: 0;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.quoteButton:hover{
+    background-color: rgb(116, 26, 128);
+}
+.quote{
+    opacity: 1;
+    animation: appear;
+    animation-duration: 3s;
+}
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+.quoteTitle{
+    font-size: 2.25vw;
+}
+.quoteMain{
+    position: relative;
+    top: clamp(-1rem, 1.857rem + -7.619vw, -5rem);
+    text-align: center;
+    margin-left: clamp(3rem, -11.286rem + 38.095vw, 23rem);
+    margin-right: clamp(3rem, -11.286rem + 38.095vw, 23rem);
+    height: 50vh;
+    width: 60vh;
+}
+.quoteMain > div{
+    height: 20rem;
 }
 
 /* Notes Section */

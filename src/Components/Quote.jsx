@@ -41,11 +41,11 @@ function Quote() {
 
   return (
     <section className='quoteSection'>
-      <main>
+      <main className='quoteMain'>
         <div>
           {quote.content && (
             <>
-              <h1 key={count} className='quote'>
+              <h1 key={count} className='quote quoteTitle'>
                 "<strong>{quote.content}</strong>"
               </h1>
               <h3>
@@ -54,7 +54,7 @@ function Quote() {
             </>
           )}
         </div>
-        <button onClick={newQuote}>Generate New</button>
+        <button className="quoteButton" onClick={newQuote}>Generate New</button>
       </main>
     </section>
   );

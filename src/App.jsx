@@ -9,11 +9,11 @@ import Notes from './Components/Notes'
 function App() {
   return (
     <>
-      <Main></Main>
+      <Main/>
       <Nav/>
       <Search/>
       <Music/>
-      {/* <Quote/> */}
+      <Quote/>
       <Notes/>
     </>
   );
