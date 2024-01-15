@@ -40,7 +40,7 @@ function Quote() {
   }
 
   return (
-    <section className='quoteSection'>
+    <section id="quotes" className='quoteSection'>
       <main className='quoteMain'>
         <div>
           {quote.content && (

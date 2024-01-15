@@ -108,6 +108,12 @@ body{
 .hidden{
     opacity: 0;
 }
+.infoSwitch{
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding: 3px;
+}
 
 /* Search */
 .searchSection {
@@ -224,9 +230,74 @@ body{
 
 /* Notes Section */
 .notesSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
-    height: 50vh;
+    height: auto;
+    min-height: 50vh;
+    padding: 2rem;
     background-image: url('../../public/images/notes.png');
     background-size: cover;
     background-position: center;
+}
+.notesTitle{
+    font-size: clamp(1rem, 0.474rem + 2.807vw, 3rem);
+    color: black;
+}
+.notesText{
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+.notesButton{
+    display: inline-block;
+    outline: 0;
+    border:0;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: #000;
+    background: #fff;
+    line-height: 30px;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transition: all 0.2s;
+}
+.notesButton:hover{
+    box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transform: scale(1.01);
+}
+.notesDelete{
+    display: inline-block;
+    outline: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 9px 22px;
+    font-size: 22px;
+    height: 50px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    line-height: normal;
+    background: linear-gradient(90deg,#5522fa 0,#0074e4 100%);
+    border-radius: 50px;
+    transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
+    margin: clamp(0.5rem, -0.158rem + 3.509vw, 3rem);
+}
+.notesDelete:hover{
+    box-shadow: 0 0 0 0.15rem #5ceace;
+}
+.notesItem{
+    font-size: clamp(0.5rem, 0.105rem + 2.105vw, 2rem);
 }
