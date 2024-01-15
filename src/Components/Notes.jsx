@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import useSound from 'use-sound';
+import boopSfx from '../sounds/../sounds/421299__jaszunio15__click_52.wav';
 
 const NoteTaker = () => {
   const [note, setNote] = useState('');
   const [savedNotes, setSavedNotes] = useState([]);
+  const [play] = useSound(boopSfx);
 
   // gets notes from local storage
   useEffect(() => {
@@ -49,7 +52,7 @@ const NoteTaker = () => {
         placeholder="Type your note here..."
       />
       <br />
-      <button className="notesButton" onClick={handleSaveNote}>Save Note</button>
+      <button className="notesButton" onClick={()=>{handleSaveNote();play()}}>Save Note</button>
       <ul>
         {savedNotes.map((savedNote, index) => (
           <li className="notesItem" key={index}>

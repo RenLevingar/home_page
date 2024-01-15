@@ -1,5 +1,7 @@
 // Import Statement
 import { useState, useEffect } from 'react';
+import useSound from 'use-sound';
+import boopSfx from '../sounds/mixkit-vacuum-swoosh-transition-1465.wav';
 
 // API URL
 let url = "https://api.quotable.io/random"
@@ -13,6 +15,12 @@ function Quote() {
   const [generate, setGenerate] = useState(false); //new quote generate
   const [count, setCount] = useState(0); //counter for animation re run
   const maxLength = 150; // the maxium length of the quote
+  const [play] = useSound(boopSfx);
+
+  // const BoopButton = () => {
+  //   const [play] = useSound(boopSfx);
+  //   return <button onClick={play}>Boop!</button>;
+  // };
 
   useEffect(() => {
     fetch(url)
@@ -54,7 +62,7 @@ function Quote() {
             </>
           )}
         </div>
-        <button className="quoteButton" onClick={newQuote}>Generate New</button>
+        <button className="quoteButton" onClick={()=>{newQuote();play()}}>Generate New</button>
       </main>
     </section>
   );
