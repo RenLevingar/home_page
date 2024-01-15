@@ -1,11 +1,40 @@
 # home_page
 Home page for new google tabs.
 
+## Authors
+
+- [@RenLevingar](https://github.com/RenLevingar) - Ren
+
+### Description 
+New Google home page with new features like daily quotes and a note pad.
+
+### Setup
+Before running the program run the terminal command "npm i" to make sure all dependencies are installed. Note: make sure you are in the right directory.
+
+### Initialize
+Use the terminal command "npm start" or "npm run start" to begin the program. Note: make sure you are in the right directory.
+
+### Utilization 
+THis can be uised to goole search with new tabs, custom music player, display quotes, and make temporary notes.
+
+### Implementation
+Render the app.jsx to create a main to display eveything.
+
+### style.css
+Media queried to display on different sizes (used clamp). The style.css that is connected to the index.js will change the background image. Some buttons have sound effects which can be removed by removing use sound in the code.
+
+### API
+The used API for the quote part is quotable.io, the author, content, and length of each quote is being pulled. This generator will not display any quotes that exceed the charceter limit of 150. If there are any uissues with the functionality of quotes check the API situation.
 
 ## image credits
 background - Pexels: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fforest%2520background%2F&psig=AOvVaw3v4HHdlyidiKXPECyTPP0l&ust=1705096917229000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCOD82JKr1oMDFQAAAAAdAAAAABAE
 musicBG - AI generated
 wireframe.png - made on Figma
+
+
+
+
+
 
 # Getting Started with Create React App
 
